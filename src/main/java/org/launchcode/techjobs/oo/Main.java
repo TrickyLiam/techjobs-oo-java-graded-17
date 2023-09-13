@@ -14,6 +14,9 @@ public class Main {
 //        for (Job job : jobs){
 //            System.out.println(job);
 //        }
+        Employer Walmart = new Employer();
+        System.out.println(Walmart.getValue());
     }
+
 
 }
