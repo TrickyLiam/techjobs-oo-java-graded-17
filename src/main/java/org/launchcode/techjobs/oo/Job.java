@@ -20,7 +20,7 @@ public class Job {
 
     public Job() {
         this.id = nextId;
-        nextID++;
+        nextId++;
     }
 
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency){
