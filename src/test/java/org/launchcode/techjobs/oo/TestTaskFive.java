@@ -40,6 +40,8 @@ public class TestTaskFive extends AbstractTest {
         String lastChar = String.valueOf(job.toString().charAt(job.toString().length()-1));
         assertEquals(firstChar, System.lineSeparator());
         assertEquals(lastChar, System.lineSeparator());
+        assertEquals(lastChar, lineSeparator());
+        assertEquals(firstChar, lineSeparator());
     }
 
     @Test
