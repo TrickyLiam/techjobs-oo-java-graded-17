@@ -1,5 +1,6 @@
 package org.launchcode.techjobs.oo;
 
+import javax.naming.Name;
 import java.util.Collections;
 import java.util.Objects;
 
@@ -32,6 +33,22 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
 
+    @Override
+    public String toString() {
+        if(id == 0){
+            return "Data Not Available";
+        }
+       String newline = System.lineSeparator();
+        return
+                        newline +
+                        "ID: " + this.getId() + newline +
+                        "Name: " + this.getName() + newline +
+                        "Employer: " + this.getEmployer() + newline +
+                        "Location: " + this.getLocation() + newline +
+                        "Position Type: " + this.getPositionType() + newline +
+                        "Core Competency: " + this.getCoreCompetency() + newline;
+    }
+
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
 
@@ -49,6 +66,9 @@ public class Job {
     }
 
     public String getName() {
+        if(this.name == null) {
+            return "Data not available";
+        }
         return name;
     }
 
@@ -57,14 +77,23 @@ public class Job {
     }
 
     public PositionType getPositionType() {
+        if(this.positionType.getValue() == null || this.positionType.getValue().isEmpty()) {
+            return new PositionType("Data not available");
+        }
         return positionType;
     }
 
     public Location getLocation() {
+        if(this.location.getValue() == null || this.location.getValue().isEmpty()) {
+            return new Location("Data not available");
+        }
         return location;
     }
 
     public CoreCompetency getCoreCompetency() {
+        if(this.coreCompetency.getValue() == null || this.coreCompetency.getValue().isEmpty()) {
+            return new CoreCompetency("Data not available");
+        }
         return coreCompetency;
     }
 
@@ -81,6 +110,9 @@ public class Job {
     }
 
     public Employer getEmployer() {
+        if(this.employer.getValue() == null || this.employer.getValue().isEmpty()) {
+            return new Employer("Data not available");
+        }
         return employer;
     }
 
