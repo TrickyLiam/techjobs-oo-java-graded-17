@@ -102,7 +102,7 @@ public class JobTest {
 
        String newline = System.lineSeparator();
 
-       assertEquals( newline + testJob.getId() + newline +
+       assertEquals( newline + "ID: " + testJob.getId() + newline +
                        "Name: Product tester" + newline +
                        "Employer: ACME" + newline +
                        "Location: Desert" + newline +
@@ -123,7 +123,7 @@ public class JobTest {
 
        String newline = System.lineSeparator();
 
-        assertEquals(newline + emptyJob.getId() + newline +
+        assertEquals(newline + "ID: " + emptyJob.getId() + newline +
                         "Name: Product tester" + newline +
                         "Employer: ACME" + newline +
                         "Location: Data not available" + newline +

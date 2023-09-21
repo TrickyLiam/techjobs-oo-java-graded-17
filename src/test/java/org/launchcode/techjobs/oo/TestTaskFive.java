@@ -18,10 +18,11 @@ import static org.junit.Assert.fail;
  */
 public class TestTaskFive extends AbstractTest {
 
-    @Mocked Job job;
+    @Mocked
+    Job job;
 
     @Test
-    public void testTestToStringStartsAndEndsWithNewLineExists () throws ClassNotFoundException {
+    public void testTestToStringStartsAndEndsWithNewLineExists() throws ClassNotFoundException {
         Class jobTestClass = getClassByName("JobTest");
         Method testToStringStartsAndEndsWithNewLineMethod = null;
 
@@ -37,13 +38,13 @@ public class TestTaskFive extends AbstractTest {
     public void testToStringStartsAndEndsWithNewLine() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         Job job = createJob("Web Developer", "LaunchCode", "StL", "Back-end developer", "Java");
         String firstChar = String.valueOf(job.toString().charAt(0));
-        String lastChar = String.valueOf(job.toString().charAt(job.toString().length()-1));
+        String lastChar = String.valueOf(job.toString().charAt(job.toString().length() - 1));
         assertEquals(lastChar, lineSeparator());
         assertEquals(firstChar, lineSeparator());
     }
 
     @Test
-    public void testTestToStringContainsCorrectLabelsAndDataExists () throws ClassNotFoundException {
+    public void testTestToStringContainsCorrectLabelsAndDataExists() throws ClassNotFoundException {
         Class jobTestClass = getClassByName("JobTest");
         Method testToStringContainsCorrectLabelsAndDataMethod = null;
 
@@ -62,7 +63,7 @@ public class TestTaskFive extends AbstractTest {
     }
 
     @Test
-    public void testTestToStringHandlesEmptyFieldExists () throws ClassNotFoundException {
+    public void testTestToStringHandlesEmptyFieldExists() throws ClassNotFoundException {
         Class jobTestClass = getClassByName("JobTest");
         Method testToStringHandlesEmptyField = null;
 
