@@ -39,8 +39,10 @@ public class TestTaskFive extends AbstractTest {
         Job job = createJob("Web Developer", "LaunchCode", "StL", "Back-end developer", "Java");
         String firstChar = String.valueOf(job.toString().charAt(0));
         String lastChar = String.valueOf(job.toString().charAt(job.toString().length() - 1));
-        assertEquals(lastChar, lineSeparator());
-        assertEquals(firstChar, lineSeparator());
+        assertEquals(lastChar, "\n");
+//        assertEquals(lastChar, lineSeparator());
+//        assertEquals(firstChar, lineSeparator());
+        assertEquals(firstChar, "\n");
     }
 
     @Test

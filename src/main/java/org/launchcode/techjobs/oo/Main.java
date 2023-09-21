@@ -15,8 +15,21 @@ public class Main {
 //        for (Job job : jobs){
 //            System.out.println(job);
 //        }
-        Employer Walmart = new Employer();
-        System.out.println(Walmart.getValue());
+        Job testJob = new Job("Product tester",
+                new Employer("ACME"),
+                new Location("Desert"),
+                new PositionType("Quality control"),
+                new CoreCompetency("Persistence"));
+        System.out.println(testJob.toString());
+
+        Job testJob2 = new Job("Product ",
+                new Employer("hershey"),
+                new Location("water"),
+                new PositionType("Quality "),
+                new CoreCompetency("partying"));
+        System.out.println(testJob2.toString());
+//        Employer Walmart = new Employer();
+//        System.out.println(Walmart.getValue());
     }
 
 

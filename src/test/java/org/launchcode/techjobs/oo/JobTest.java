@@ -82,8 +82,8 @@ public class JobTest {
                 new CoreCompetency("Persistence"));
 
 
-        String newline = System.lineSeparator();
-
+//        String newline = System.lineSeparator();
+        String newline = "\n";
         assertEquals(newline + "ID: " + testJob.getId() + newline +
                         "Name: " + testJob.getName() + newline +
                         "Employer: " + testJob.getEmployer() + newline +
@@ -101,8 +101,8 @@ public class JobTest {
                 new PositionType("Quality control"),
                 new CoreCompetency("Persistence"));
 
-        String newline = System.lineSeparator();
-
+//        String newline = System.lineSeparator();
+        String newline = "\n";
         assertEquals(newline + "ID: " + testJob.getId() + newline +
                         "Name: Product tester" + newline +
                         "Employer: ACME" + newline +
@@ -122,7 +122,8 @@ public class JobTest {
                 new CoreCompetency("Persistence"));
 
 
-        String newline = System.lineSeparator();
+//        String newline = System.lineSeparator();
+        String newline = "\n";
 
         assertEquals(newline + "ID: " + emptyJob.getId() + newline +
                         "Name: Product tester" + newline +

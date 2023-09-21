@@ -38,8 +38,14 @@ public class Job {
         if (id == 0) {
             return "Data Not Available";
         }
-        String newline = System.lineSeparator();
-        return newline + "ID: " + this.getId() + newline + "Name: " + this.getName() + newline + "Employer: " + this.getEmployer() + newline + "Location: " + this.getLocation() + newline + "Position Type: " + this.getPositionType() + newline + "Core Competency: " + this.getCoreCompetency() + newline;
+//        String newline = System.lineSeparator();
+        String newline = "\n";
+        return newline + "ID: " + this.getId() + newline +
+                "Name: " + this.getName() + newline +
+                "Employer: " + this.getEmployer() + newline +
+                "Location: " + this.getLocation() + newline +
+                "Position Type: " + this.getPositionType() + newline +
+                "Core Competency: " + this.getCoreCompetency() + newline;
     }
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
