@@ -19,7 +19,6 @@ public class Employer { //first commit
     }
 
 
-
     // Custom toString, equals, and hashCode methods:
 
     @Override
